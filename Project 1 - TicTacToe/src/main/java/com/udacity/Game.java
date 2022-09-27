@@ -151,6 +151,19 @@ public class Game {
     public String checkGameWinner(char [][]grid){
         String result = "None";
         //Student code goes here ...
+
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+
+
+                if (grid[i][j] = grid[i][j+1] && grid[i][j+1] = grid [i][j+2] ) {
+                    return result = grid[i][j] + " win";
+
+                }
+            }
+
+
+        }
         return result;
     }
 
