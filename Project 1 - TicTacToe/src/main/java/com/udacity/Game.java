@@ -152,18 +152,24 @@ public class Game {
         String result = "None";
         //Student code goes here ...
 
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
+            for ( int i = 0; i < 3; i++) {
+                for ( int j = 0; j < 3; j++) {
 
 
-                if (grid[i][j] = grid[i][j+1] && grid[i][j+1] = grid [i][j+2] ) {
-                    return result = grid[i][j] + " win";
-
+                    if (grid[i][j] == grid[i][j + 1] && grid[i][j + 1] == grid[i][j + 2]) {
+                        return result = grid[i][j] + " win";
+                    }
+                    if (grid[i][j] == grid[i + 1][j] && grid[i + 1][j] == grid[i + 2][j]) {
+                        return result = grid[i][j] + " win";
+                    }
                 }
+
+
             }
 
 
-        }
+
+
         return result;
     }
 
