@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3020c33f-cb7b-404c-a7cb-6e908a843701" name="Changes" comment="" />
+    <list default="true" id="3020c33f-cb7b-404c-a7cb-6e908a843701" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/Game.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,6 +71,9 @@
       <workItem from="1664308435635" duration="791000" />
       <workItem from="1664309346188" duration="1458000" />
       <workItem from="1664311344064" duration="44000" />
+      <workItem from="1664312562200" duration="86000" />
+      <workItem from="1664313550623" duration="1886000" />
+      <workItem from="1664477734797" duration="6841000" />
     </task>
     <servers />
   </component>
