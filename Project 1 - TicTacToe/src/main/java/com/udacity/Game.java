@@ -153,38 +153,36 @@ public class Game {
         //Student code goes here ...
 
             for ( int i = 0; i < 3; i++) {
-
+                for ( int j = 0; j < 3; j++) {
 
                     if (grid[i][0] == grid[i][1] && grid[i][1] == grid[i][2] && grid[i][0] == 'x') {
                         return result = "X win";
 
-                    }
-                    else if (grid[i][0] == grid[i][1] && grid[i][1] == grid[i][2] && grid[i][0] == 'o') {
+                    } else if (grid[i][0] == grid[i][1] && grid[i][1] == grid[i][2] && grid[i][0] == 'o'){
                         return result = "O win";
 
                     }
-                    else if (((grid[0][0] == grid[1][1] && grid[1][1] == grid[2][2]) ||
-                            (grid[0][2] == grid [1][1] && grid[1][1] == grid [2][0])) && grid[1][1] == 'o') {
-                        return  result = "O win";
-                    }
-                    else if (((grid[0][0] == grid[1][1] && grid[1][1] == grid[2][2]) ||
-                        (grid[0][2] == grid [1][1] && grid[1][1] == grid [2][0])) && grid[1][1] == 'x') {
+                    if (((grid[0][0] == grid[1][1] && grid[1][1] == grid[2][2]) ||
+                            (grid[0][2] == grid[1][1] && grid[1][1] == grid[2][0])) && grid[1][1] == 'o') {
+                        return result = "O win";
+
+                    } else if (((grid[0][0] == grid[1][1] && grid[1][1] == grid[2][2]) ||
+                            (grid[0][2] == grid[1][1] && grid[1][1] == grid[2][0])) && grid[1][1] == 'x') {
                         return result = "x win";
+
                     }
+                    if (grid[0][j] == grid[1][j] && grid[1][j] == grid[2][j] && grid[0][j] == 'x') {
+                        return result = "X win";
 
-            }
-            for ( int j = 0; j < 3; j++) {
-
-                if (grid[0][j] == grid[1][j] && grid[1][j] == grid[2][j] && grid[0][j] == 'x') {
-                    return result = "X win";
-                } else if (grid[0][j] == grid[1][j] && grid[1][j] == grid[2][j] && grid[0][j] == 'o') {
-                    return result = "O win";
+                    } else if (grid[0][j] == grid[1][j] && grid[1][j] == grid[2][j] && grid[0][j] == 'o') {
+                        return result = "O win";
+                    }
                 }
             }
 
             if (freeSpots == 0){
                 return result = "TIE";
-                    }
+            }
 
 
         return result;
