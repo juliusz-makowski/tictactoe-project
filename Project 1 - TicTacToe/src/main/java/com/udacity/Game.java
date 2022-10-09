@@ -156,34 +156,32 @@ public class Game {
                 for ( int j = 0; j < 3; j++) {
 
                     if (grid[i][0] == grid[i][1] && grid[i][1] == grid[i][2] && grid[i][0] == 'x') {
-                        return result = "X win";
+                        return result = "x wins";
 
                     } else if (grid[i][0] == grid[i][1] && grid[i][1] == grid[i][2] && grid[i][0] == 'o'){
-                        return result = "O win";
+                        return result = "o wins";
 
                     }
                     if (((grid[0][0] == grid[1][1] && grid[1][1] == grid[2][2]) ||
                             (grid[0][2] == grid[1][1] && grid[1][1] == grid[2][0])) && grid[1][1] == 'o') {
-                        return result = "O win";
+                        return result = "o wins";
 
                     } else if (((grid[0][0] == grid[1][1] && grid[1][1] == grid[2][2]) ||
                             (grid[0][2] == grid[1][1] && grid[1][1] == grid[2][0])) && grid[1][1] == 'x') {
-                        return result = "x win";
+                        return result = "x wins";
 
                     }
                     if (grid[0][j] == grid[1][j] && grid[1][j] == grid[2][j] && grid[0][j] == 'x') {
-                        return result = "X win";
+                        return result = "x wins";
 
                     } else if (grid[0][j] == grid[1][j] && grid[1][j] == grid[2][j] && grid[0][j] == 'o') {
-                        return result = "O win";
+                        return result = "o wins";
                     }
                 }
             }
-
-            if (freeSpots == 0){
-                return result = "TIE";
-            }
-
+        if (freeSpots == 0){
+            return result = "tie";
+        }
 
         return result;
     }
